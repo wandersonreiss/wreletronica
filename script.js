@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Botão do WhatsApp
     const whatsappButton = document.createElement("a");
-    whatsappButton.href = "https://wa.me/5561984291124"; // Número atualizado
+    whatsappButton.href = "https://w.app/eletronicawr"; // Número atualizado
     whatsappButton.className = "whatsapp-button";
     whatsappButton.target = "_blank";
     whatsappButton.innerHTML = "🖊"; // Ícone do WhatsApp
