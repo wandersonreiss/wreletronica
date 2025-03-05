@@ -78,6 +78,7 @@ body {
 
 .service-body {
     padding: 1.5rem;
+    color: #333;
 }
 
 /* Formulário de Contato */
@@ -142,19 +143,8 @@ footer {
         font-size: 2rem;
     }
     
-    .service-card {
-        margin-bottom: 1.5rem;
-    }
-    
     .info-item {
         flex-direction: column;
         text-align: center;
     }
-}
-/* Adicione para compatibilidade */
-.service-card {
-    display: -moz-flex;
-    display: flex;
-    -moz-gap: 1rem;
-    gap: 1rem;
 }
