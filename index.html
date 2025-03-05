@@ -211,14 +211,20 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
                             <i class="fab fa-instagram"></i>
                         </a>
                         
-                        <!-- WhatsApp -->
-                        <a href="https://wa.me/556184291124" 
-                           target="_blank" 
-                           rel="noopener noreferrer" 
-                           class="text-white mx-2"
-                           aria-label="WhatsApp">
-                            <i class="fab fa-whatsapp"style="color: #25D366";></i> fale conosco pelo WhatsApp
-                        </a>
+                        <script>
+                            function gerarLinkWhatsApp() {
+                              const numero = '556184291124';
+                              const texto = 'Olá! Preciso de um orçamento ...'; // Edite aqui
+                              return `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+                            }
+                            </script>
+                            
+                            <a href="#" 
+                               onclick="window.open(gerarLinkWhatsApp(), '_blank')"
+                               class="whatsapp-link">
+                               WhatsApp com Mensagem
+                            </a>
+
                     </div>
                 </div>
             </div>
