@@ -13,7 +13,27 @@ body {
 
 /* Cabeçalho */
 .navbar {
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+.nav-link:hover {
+    color: #25D366 !important;
+}
+.whatsapp-btn {
+    background: #25D366;
+    color: white !important;
+    border-radius: 25px;
+    padding: 8px 25px !important;
+    margin-left: 15px;
+}
+.whatsapp-btn:hover {
+    background: #128C7E;
 }
 
 .logo-nav {
