@@ -133,18 +133,13 @@ footer {
     opacity: 0.8;
 }
 
-/* Responsivo */
+
 @media (max-width: 768px) {
-    .hero {
-        padding: 80px 0;
+    .navbar-collapse {
+      display: none;
     }
-    
-    .hero h1 {
-        font-size: 2rem;
+    .navbar-collapse.show {
+      display: block;
     }
-    
-    .info-item {
-        flex-direction: column;
-        text-align: center;
-    }
-}
+  }
+  
