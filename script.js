@@ -101,3 +101,21 @@ window.addEventListener('load', function() {
     }, 300);
 });
 
+// Animate service cards on scroll
+const observerOptions = {
+    threshold: 0.2
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.service-card').forEach(card => {
+    observer.observe(card);
+});
+
