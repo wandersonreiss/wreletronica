@@ -82,3 +82,13 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
     }
 });
 
+// Back to Top Button
+window.addEventListener('scroll', function() {
+    const backToTop = document.querySelector('.back-to-top');
+    if (window.pageYOffset > 300) {
+        backToTop.classList.add('visible');
+    } else {
+        backToTop.classList.remove('visible');
+    }
+});
+
