@@ -1,3 +1,4 @@
+
 // Form Submission
 document.getElementById('contact-form').addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -33,6 +34,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
 // Configuração específica do Formspree
 document.getElementById('contact-form').addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -79,5 +81,4 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
         submitButton.disabled = false;
     }
 });
-// Adicione este polyfill no <head> para forms antigos
-<script src="https://cdn.jsdelivr.net/npm/formdata-polyfill"></script>
+
