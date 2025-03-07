@@ -50,10 +50,47 @@ body {
 }
 
 /* Hero Section */
+/* Hero Section - improve text readability */
 .hero {
     background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
     padding: 100px 0;
     color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Social Links - enhance hover effects */
+.social-links a {
+    font-size: 24px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+    color: var(--cor-secundaria) !important;
+}
+
+/* Contact Form - improve focus states */
+.contact-form .form-control:focus {
+    border-color: var(--cor-secundaria);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+    transform: translateY(-2px);
 }
 
 .hero h1 {
