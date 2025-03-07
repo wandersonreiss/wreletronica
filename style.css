@@ -134,13 +134,21 @@ body {
     cursor: pointer;
 }
 
+/* Remove duplicate service-card hover rule */
 .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
+/* Remove the second duplicate hover rule that was here */
 .service-card:hover .service-img {
     transform: scale(1.05);
+}
+
+/* Performance Optimizations */
+img {
+    will-change: transform;
+    content-visibility: auto;
 }
 
 .service-img {
@@ -148,6 +156,11 @@ body {
     height: 200px;
     object-fit: cover;
     transition: transform 0.5s ease;
+    loading: lazy;
+}
+
+.map-iframe {
+    loading: lazy;
 }
 
 .service-body {
