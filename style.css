@@ -91,13 +91,12 @@ body {
     overflow: hidden;
     transition: transform 0.3s ease;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
+    display: flex;
+    flex-direction: column;
 }
 
 .service-img {
+    width: 100%;
     height: 200px;
     object-fit: cover;
 }
@@ -105,6 +104,20 @@ body {
 .service-body {
     padding: 1.5rem;
     color: #333;
+}
+
+.service-body h3 {
+    margin-bottom: 1rem;
+    color: var(--cor-primaria);
+}
+
+.service-body p {
+    color: #666;
+    margin-bottom: 0;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
 }
 
 /* Formulário de Contato */
