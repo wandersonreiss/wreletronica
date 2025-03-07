@@ -92,3 +92,12 @@ window.addEventListener('scroll', function() {
     }
 });
 
+// Loading Animation
+window.addEventListener('load', function() {
+    const loader = document.querySelector('.loading-overlay');
+    loader.classList.add('fade-out');
+    setTimeout(() => {
+        loader.style.display = 'none';
+    }, 300);
+});
+
