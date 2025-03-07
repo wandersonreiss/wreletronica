@@ -241,5 +241,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     <a href="#" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </a>
+
+    <!-- Adicione estes scripts antes do fechamento do body -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Remove o loading overlay quando a página carregar
+        window.addEventListener('load', function() {
+            document.querySelector('.loading-overlay').classList.add('fade-out');
+            setTimeout(function() {
+                document.querySelector('.loading-overlay').style.display = 'none';
+            }, 500);
+        });
+    </script>
 </body>
 
